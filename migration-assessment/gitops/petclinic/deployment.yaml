@@ -39,7 +39,7 @@ spec:
             secretKeyRef:
               key: mysql-password
               name: petclinic-mysql-credentials
-        image: spring-petclinic:migration-source-v1
+        image: spring-petclinic:migration-source-v2
         imagePullPolicy: IfNotPresent
         livenessProbe:
           failureThreshold: 3

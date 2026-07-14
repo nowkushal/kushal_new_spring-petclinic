@@ -5,7 +5,7 @@ metadata:
   namespace: petclinic-source
 spec:
   progressDeadlineSeconds: 600
-  replicas: 4
+  replicas: 5
   revisionHistoryLimit: 10
   selector:
     matchLabels:

@@ -27,14 +27,6 @@ spec:
           value: '8180'
         - name: SPRING_PROFILES_ACTIVE
           value: default
-            secretKeyRef:
-              key: mysql-user
-              name: petclinic-mysql-credentials
-        - name: MYSQL_PASS
-          valueFrom:
-            secretKeyRef:
-              key: mysql-password
-              name: petclinic-mysql-credentials
         image: springcommunity/spring-petclinic:3.5.6
         imagePullPolicy: IfNotPresent
         livenessProbe:

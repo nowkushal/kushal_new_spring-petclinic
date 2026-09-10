@@ -59,6 +59,10 @@ spec:
                 secretKeyRef:
                   name: demo-db
                   key: database
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "75m"
           ports:
             - containerPort: 5432
               name: postgresql

@@ -41,6 +41,10 @@ spec:
                 {
                   "management.endpoint.health.probes.add-additional-paths": true
                 }
+          resources:
+            requests:
+              memory: "192Mi"
+              cpu: "100m"
           ports:
             - name: http
               containerPort: 8080
